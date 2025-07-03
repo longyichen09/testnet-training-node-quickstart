@@ -108,8 +108,8 @@ if __name__ == "__main__":
     )
 
     # Set model ID and context length
-    model_id = "Qwen/Qwen1.5-0.5B"
-    context_length = 2048
+    model_id = "google/gemma-2b"
+    context_length = 4096
 
     # Start LoRA fine-tuning
     train_lora(
