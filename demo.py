@@ -46,7 +46,7 @@ def train_lora(
         per_device_train_batch_size=training_args.per_device_train_batch_size,
         gradient_accumulation_steps=training_args.gradient_accumulation_steps,
         warmup_steps=100,
-        learning_rate=2e-4,
+        learning_rate=3e-4,
         bf16=True,
         logging_steps=20,
         output_dir="outputs",
@@ -108,7 +108,7 @@ if __name__ == "__main__":
     )
 
     # Set model ID and context length
-    model_id = "google/gemma-2b"
+    model_id = "microsoft/phi-3-mini-4k-instruct"
     context_length = 4096
 
     # Start LoRA fine-tuning
